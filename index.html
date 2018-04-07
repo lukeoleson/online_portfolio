@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 
+<html>
+
 <head>
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/site.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" type="text/css" href="assets/borrowed/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/borrowed/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="assets/owned/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/owned/images/favicon-32.png">
+    <title>Luke Oleson :: Online Development Portfolio</title>
 </head>
 
 <body>
-
-    <!-- UNDER CONSTRUCTION BANNER -->
-    <div id="under-construction-banner">
-        <div class="text-med">This Site is Under Construction</div>
-        <div class="text-small">updated: 04/05/2018</div>
-    </div>
-
-    <!-- INTRODUCTION PANEL -->
-    <div id="intro-panel-container">
-        <h1>l u k e o l e s o n</h1>
-    </div>
-
-    <div id="projects">
-        <h1 class="section-header">PROJECTS</h1>
-        <hr class="width-16th">
-        <p class="coming-soon">Coming Soon!</p>
-    </div>
-
-    <div id="accounts">
-        <h1 class="section-header">ACCOUNTS</h1>
-        <hr class="width-16th">
-        <p>find me around the net</p>
-        <div id="account-links">
-            <a href="https://github.com/lukeoleson/" target="_blank"><img src="./images/github.png" width="100px" alt="the github logo"/></a>
-            <a href="https://stackoverflow.com/users/6336033/lukeoleson" target="_blank"><img class="translate-up-50px" src="./images/so-icon.png" width="120px" alt="the stackoverflow logo"/></a>
-            <a href="https://www.linkedin.com/in/lukeoleson/" target="_blank"><img src="./images/linkedin.png" width="100px" alt="the linkedin logo"/></a>
+    
+    <!--TEMPORARY UNDER CONSTRUCTION MESSAGE-->
+    <div class="under-construction-modal" id="test-modal">
+        <div class="under-construction-modal-content">
+            Uh oh, you caught me - I actually haven't actually implemented that feature yet :|
+            <br><br><hr><br><p>In my defense, this website is brand spankin new (04/05/18), and my goal is to have all the
+            important stuff on here within a couple days, so make sure you come back soon :)</p>
         </div>
-
     </div>
-
-    <footer>
-        www.lukeoleson.com, 2018 &copy;
-    </footer>
-
+    
+    <!-- HERO HEADER -->
+    <header>
+        <!-- GREETING TEXT BOX -->
+        <div class="header-text-box">
+            <h1>Hi, my name's Luke,<br>and this is my portfolio...<span>to be...</span></h1> 
+        </div>
+        
+        <nav>
+            <div class="row">
+                <ul class="main-nav">
+                    <li><a id="test-btn" href="#" class="not-implemented">accounts</a></li>
+                    <li><a href="#" class="not-implemented">projects</a></li>
+                    <li><a href="#" class="not-implemented">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!--TEMPORARY UNDER CONSTRUCTION MODAL SCRIPT-->
+    <script>
+    let modal1 = document.getElementsByClassName('under-construction-modal');
+    let btns = document.getElementsByClassName('not-implemented');
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].onclick = () => {
+            modal1[0].style.display = "block";
+        }
+    }
+    window.onclick = (e) => {
+     if (e.target == modal1[0]) {
+            modal1[0].style.display = "none";
+        }        
+    }
+    </script>
+        
 </body>
 
 </html>

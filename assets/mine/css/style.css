@@ -1,0 +1,145 @@
+
+/* ==================================== */
+/*      CONFIG                          */
+/* ==================================== */
+/*
+
+THEME COLOR: #2980b9
+
+*/
+
+
+
+
+/* ==================================== */
+/*      BASIC SETUP AND DEFAULTS        */
+/* ==================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* ==================================== */
+/*               HEADER                 */
+/* ==================================== */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;    
+}
+
+.header-text-box {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.header-text-box h1 {
+    font-size: 250%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+.header-text-box span {
+    margin-left: 10px;
+    font-size: 25%;
+}
+
+/* NAV BAR
+==========*/
+
+.main-nav {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    letter-spacing: 2px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin: 50px 80px;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+    color: #fff;
+    font-size: 150%;
+    font-weight: 300;
+    text-decoration: none;
+    padding-top: 5px;
+    transition: border-top 0.2s;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+    border-top: 2px solid #2980b9;
+}
+
+/* ==================================== */
+/*         REUSABLE COMPONENTS          */
+/* ==================================== */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* ==================================== */
+/*                 TEMP                 */
+/* ==================================== */
+
+/* UNDER CONSTRUCTION MODAL
+===========================*/
+
+.close-btn {
+    float: right;
+    font-size: 200%;
+}
+
+.under-construction-modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: fixed;
+}
+
+.under-construction-modal-content {
+    background-color: #efefef;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 35px;
+    border-radius: 15px;
+    border: 2px solid #333;
+}
+
+.under-construction-modal-content p {
+    font-size: 80%;
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+}

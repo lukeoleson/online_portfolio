@@ -10,7 +10,6 @@ THEME COLOR: #2980b9
 
 
 
-
 /* ==================================== */
 /*      BASIC SETUP AND DEFAULTS        */
 /* ==================================== */
@@ -29,6 +28,91 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
+
+
+/* ==================================== */
+/*         REUSABLE COMPONENTS          */
+/* ==================================== */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* ----- HEADINGS ---- */
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 250%;
+    font-weight: 300;
+    word-spacing: 4px;
+
+}
+
+h2 {
+    font-size: 185%;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    width: 100px;
+    content: '';
+    background-color: #2980b9;
+    margin: auto;
+    margin-top: 15px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 110%;
+    margin: 15px 0px;
+}
+
+h4 {
+    font-size: 80%;
+    text-align: center;
+}
+
+h4:after {
+    display: block;
+    height: 1px;
+    width: 100%;
+    content: '';
+    background-color: #2980b9;
+    margin: auto;
+    margin-top: 15px;   
+}
+
+/* ----- PARAGRAPHS ----- */
+
+p {
+    line-height: 150%;
+}
+
+.wide-p {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+/* ----- LINKS ----- */
+
+a {
+   text-decoration: none;
+    font-weight: bold;
+    color: #2980b9;
+}
+
 
 /* ==================================== */
 /*               HEADER                 */
@@ -50,20 +134,7 @@ header {
     color: #fff;
 }
 
-.header-text-box h1 {
-    font-size: 250%;
-    font-weight: 300;
-    letter-spacing: 1px;
-    word-spacing: 4px;
-}
-
-.header-text-box span {
-    margin-left: 10px;
-    font-size: 25%;
-}
-
-/* NAV BAR
-==========*/
+/* ----- NAV BAR ----- */
 
 .main-nav {
     position: absolute;
@@ -77,7 +148,7 @@ header {
 
 .main-nav li {
     display: inline-block;
-    margin: 50px 80px;
+    margin: 5px 80px;
 }
 
 .main-nav a:link,
@@ -95,13 +166,52 @@ header {
     border-top: 2px solid #2980b9;
 }
 
+.ion-arrow-down-b {
+    color: #2980b9;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
 /* ==================================== */
-/*         REUSABLE COMPONENTS          */
+/*          PROJECTS SECTION            */
 /* ==================================== */
 
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
+.projects-section {
+    margin: 80px;
+}
+
+.project-tile {
+    margin-top: 35px;
+}
+
+.project-description-box {
+    border: 1px solid black;
+    padding: 20px;
+    height: 250px;
+}
+
+.project-tile p {
+    font-size: 70%;
+    width: 90%;
+    margin: auto;
+    padding-top: 25px;
+    text-align: justify;
+}
+
+
+/* ==================================== */
+/*                 FOOTER               */
+/* ==================================== */
+
+footer {
+    height: 150px;
+    background-color: #efefef;
+}
+
+footer p {
+    font-size: 70%;
+    text-align: center;
+    padding-top: 50px;
 }
 
 
@@ -109,8 +219,7 @@ header {
 /*                 TEMP                 */
 /* ==================================== */
 
-/* UNDER CONSTRUCTION MODAL
-===========================*/
+/* ----- UNDER CONSTRUCTION MODAL ----- */
 
 .close-btn {
     float: right;
@@ -142,4 +251,10 @@ header {
     width: 90%;
     margin: auto;
     text-align: justify;
+}
+
+.project-tile .under-construction {
+    text-align: center;
+    font-size: 80%;
+    padding-top: 55px;
 }

@@ -11,7 +11,7 @@ This is just a basic online portfolio. The main purpose is to let people who mig
 ## To Do
 
 * [x] Get the header part of the page working and add an under construction banner.
-* [ ] "Projects" section - For now just get the list up and styled. You can add more elaborate project descriptions, demos, etc. later.
+* [x] "Projects" section - For now just get the list up and styled. You can add more elaborate project descriptions, demos, etc. later.
 * [ ] "Find-me" section - Provide a place where they can get at all your profiles that might be relevant (github, linkedin, SO, ???).
 * [ ] "Contact" -- not sure if I want/need a contact section yet...think about it. 
 * [ ] Add some effects so it's not too bland (smooth scroll, cool icons, maybe some css animations, that new header/footer thing you were thinking about trying, etc.)

@@ -193,6 +193,10 @@ header {
     color: #2980b9;
 }
 
+.incomplete {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
 .project-box {
     background-color: #fff;
     box-shadow: 0 2px 2px;
@@ -214,7 +218,7 @@ header {
     font-size: 85%;
     line-height: 145%;
     letter-spacing: 1px;
-    height: 213px;
+    /* height: 213px; */
 }
 
 .project-description-long p {

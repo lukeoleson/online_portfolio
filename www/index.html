@@ -12,7 +12,7 @@
       gtag('config', 'UA-61330868-2');
     </script>
     <!-- End Global site tag -->
-    
+
     <link rel="stylesheet" type="text/css" href="assets/others/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="assets/others/css/grid.css">
     <link rel="stylesheet" type="text/css" href="assets/others/css/ionicons.min.css">
@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    
+
     <!--TEMPORARY UNDER CONSTRUCTION MESSAGE-->
     <div class="under-construction-modal">
         <div class="under-construction-modal-content">
@@ -31,17 +31,17 @@
             <br><br><hr><br><p>In my defense, this website is brand spankin' new (04/06/18), and my goal is to have all the
             important stuff on here within a couple days, so make sure you come back soon :)</p>
         </div>
-    </div>    
+    </div>
     <!--END TEMPORARY UNDER CONSTRUCTION MESSAGE-->
-    
-    
+
+
     <!-- HERO HEADER -->
     <header>
         <!-- GREETING TEXT BOX -->
         <div class="header-text-box">
-            <h1>Hi, my name's Luke,<br>and this is my portfolio...</h1> 
+            <h1>Hi, my name's Luke,<br>and this is my portfolio...</h1>
         </div>
-        
+
         <nav>
             <div class="row">
                 <ul class="main-nav">
@@ -49,12 +49,12 @@
                         <a class="main-nav-a" href="#projects" >projects</a>
                         <div class="ion-ios-arrow-down"></div>
                     </li>
-                    
+
                     <li>
                         <a href="#" class="not-implemented ">accounts</a>
                         <div class="ion-ios-arrow-down"></div>
                     </li>
-                    
+
                     <li>
                         <a href="#" class="not-implemented">contact</a>
                         <div class="ion-ios-arrow-down"></div>
@@ -63,18 +63,18 @@
             </div>
         </nav>
     </header>
-    
-    
-    <!-- PROJECTS SECTION --> 
+
+
+    <!-- PROJECTS SECTION -->
     <section id="projects" class="projects-section" >
-        
+
         <div class="row">
             <h2>My Projects</h2>
             <p class="wide-p"> Have a look at what's been keeping me busy lately</p>
         </div>
-        
+
         <div class="row">
-            
+
             <div class="col span-1-of-3 project-container">
                 <h3>Online Portfolio</h3>
                 <div class="project-box">
@@ -82,7 +82,8 @@
                         My Personal Project Showcase
                     </div>
                     <div class="project-description-long">
-                        This site was handmade using the latest and greatest as a place for me to showcase my projects and group my accounts. Wanna know more? Check out <a href="https://github.com/lukeoleson/online_portfolio" target="_blank">the repository</a>.
+                        <p>This site was handmade using the latest and greatest as a place for me to showcase my projects and group my accounts.</p>
+                        <p>Wanna know more? Check out <a href="https://github.com/lukeoleson/online_portfolio" target="_blank">the repository</a>.</p>
                     </div>
                     <div class="project-tech-icons">
                         <i class="ion-social-html5" style="color: #f44341" alt="HTML5 icon"></i>
@@ -93,7 +94,28 @@
                     </div>
                 </div>
             </div>
-                 
+
+            <div class="col span-1-of-3 project-container">
+                <h3>Event Calendar X</h3>
+                <div class="project-box">
+                    <div class="project-description-short">
+                        Shopify Event Scheduling App
+                    </div>
+                    <div class="project-description-long">
+                        <p>Easily add an event calendar to a Shopify store with this fully embedded app.</p>
+                        <p>Check out the full description and a demo <a href="app/templates/ecx-demo.html">here</a>!</p>
+                    </div>
+                    <div class="project-tech-icons">
+                        <div class="icon-container">
+                            <img src="assets/others/icons/apps.svg" class="icon-bigger" alt="React.js icon - https://www.shareicon.net/author/erik-ragnar-eliasson">
+                        </div>
+                        <div class="icon-container">
+                            <img src="assets/others/icons/json.svg" alt="JSON icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="col span-1-of-3 project-container">
                 <h3>Snappy Transcripts</h3>
                 <div class="project-box">
@@ -115,35 +137,15 @@
                 </div>
             </div>
 
-            <div class="col span-1-of-3 project-container">
-                <h3>Eventify</h3>
-                <div class="project-box">
-                    <div class="project-description-short">
-                        Embedded Shopify Scheduling App
-                    </div>
-                    <div class="project-description-long">
-                        <i><b>Description Coming Soon</b></i><br>
-                    </div>
-                    <div class="project-tech-icons">
-                        <div class="icon-container">
-                            <img src="assets/others/icons/apps.svg" class="icon-bigger" alt="React.js icon - https://www.shareicon.net/author/erik-ragnar-eliasson">
-                        </div> 
-                        <div class="icon-container">
-                            <img src="assets/others/icons/json.svg" alt="JSON icon">
-                        </div>                    
-                    </div>
-                </div>
-            </div>
-            
         </div>
-        
+
     </section>
-    
+
     <!-- FOOTER SECTION -->
     <footer>
         <p>www.lukeoleson.ca, 2018 &copy;</p>
     </footer>
-    
+
     <!--TEMPORARY UNDER CONSTRUCTION MODAL SCRIPT-->
     <script>
     let modal = document.getElementsByClassName('under-construction-modal');
@@ -163,10 +165,10 @@
     window.onclick = (e) => {
      if (e.target == modal[0]) {
             modal[0].style.display = "none";
-        }        
+        }
     }
     </script>
-        
+
 </body>
 
 </html>

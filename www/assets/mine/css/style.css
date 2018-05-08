@@ -214,7 +214,15 @@ header {
     font-size: 85%;
     line-height: 145%;
     letter-spacing: 1px;
-    height: 175px;
+    height: 213px;
+}
+
+.project-description-long p {
+    padding-bottom: 10px
+}
+
+.project-description-long a:hover {
+    color: #555;
 }
 
 .project-tech-icons {

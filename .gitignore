@@ -1,7 +1,7 @@
 # DIRECTORIES
 /analytics
 /www/app
-
+/node_modules/
 $ FILES
 
 readme-private.md

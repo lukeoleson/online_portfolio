@@ -1,0 +1,179 @@
+
+/* -------------------------------------- */
+/*            Variable & Config           */
+/* -------------------------------------- */
+
+$bg-dark: #333;
+$bg-light: #fefefe;
+$font-color: #fff;
+$theme-color: #2980b9;
+$theme-color-dark: #5ca9db;
+$icon-size: 30px;
+
+html, body {
+    background: $bg-dark;
+    color: $font-color;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    position: relative;
+
+    p {
+        letter-spacing: 1px;
+    }
+}
+
+
+/* -------------------------------------- */
+/*    MODIFIED BOOTSTRAP COMPONENTS       */
+/* -------------------------------------- */
+
+.display-4, .display-5 {
+    letter-spacing: 2px;
+    line-height: 115%;
+    font-weight: 300;
+}
+
+.display-5::after {
+    display: block;
+    height: 2px;
+    width: 100px;
+    content: '';
+    background-color: $theme-color;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.display-5-inverse::after {
+    display: block;
+    height: 2px;
+    width: 100px;
+    content: '';
+    background-color: #333;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.fragment {
+    padding-top: 58px;
+}
+
+/* -------------------------------------- */
+/*            NAVBAR                      */
+/* -------------------------------------- */
+
+.navbar {
+    opacity: 0.7;
+    border-bottom: $theme-color 2px solid;
+}
+
+
+/* -------------------------------------- */
+/*            HEADER                      */
+/* -------------------------------------- */
+
+#header-section {
+    background: url(../assets/img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+
+    .dark-overlay {
+        background-color: rgba(0,0,0,0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 700px;
+    }
+
+    .header-inner {
+        position: absolute;
+        top: 35%;
+        left: 8%;
+        transform: translate(-35%, -8%, 0);
+    }
+}
+
+
+/* -------------------------------------- */
+/*            About                       */
+/* -------------------------------------- */
+
+#about-section {
+    i {
+        font-size: 100px;
+    }
+}
+/* -------------------------------------- */
+/*            FIND ME                     */
+/* -------------------------------------- */
+
+#find-me-section {
+
+    img {
+        display: block;
+    }
+
+    i {
+        font-size: 100px;
+        color: #efefef;
+    }
+
+}
+
+/* -------------------------------------- */
+/*            Projects                    */
+/* -------------------------------------- */
+
+#projects-section {
+    background-color: $bg-light;
+
+    .card {
+        box-shadow: 5px 5px 15px #777;
+        border: none;
+    }
+
+    .card-img-top {
+        height: 180px;
+        border-bottom: 1px solid #999;
+    }
+    
+    .btn {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        background-color: $theme-color;
+        color: #fff;   
+    }
+
+    .btn:hover {
+        background-color: $theme-color-dark;
+        color: #fff;   
+    }
+
+}
+
+
+
+
+
+
+#explore-section, #share-section {
+    .fa {
+        color: #fff;
+        background: #333;
+        padding: 4px;
+        border-radius: 5px;
+        font-size:$icon-size;
+    }
+}
+
+#create-section {
+    .fa {
+        color: $theme-color;
+        background: #fff;
+        padding: 4px;
+        border-radius: 5px;
+        font-size: $icon-size;
+    }
+}

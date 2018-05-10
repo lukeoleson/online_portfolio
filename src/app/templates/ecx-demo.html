@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../assets/others/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../assets/others/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/others/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../assets/mine/css/page-style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/mine/css/app-style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400">
+
+    <link rel="icon" href="../assets/mine/images/favicon.png">
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <i class="ion-grid"></i>
+        </nav>
+        <h1>Event Calendar X</h1>
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="white" points="0,0 100,100 0,100"/>
+        </svg>
+    </header>
+
+    <section class="about">
+
+        <div class="about-content">
+            <h2>About The App</h2>
+            <p class="long-copy">Event Calendar X allows a Shopify merchant to easily embed an event calendar on any page in their store as well as provides an interface for creating and editing events. Both of these features are fully integrated into the Merchant's store and do not require the user to leave their Shopify account at any point.</p>
+
+            <p class="long-copy">Adding and removing events takes place in the 'Admin Panel', which can be found by logging in to your Shopify account and selecting 'Event Calendar X' under 'Apps'.</p>
+
+            <p class="long-copy">Adding a calendar to your store takes place through the Shopify Theme Editor where you will find the Event Calendar option in the editing panel.</p>
+
+            <p class="long-copy">Check out the demo below to see what the app looks and feels like, and stay tuned for more feature releases over the coming weeks...including hopefully a better name :)</p>
+        </div>
+
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="#f4f4f4" points="0,0 100,100 0,100"/>
+        </svg>
+    </section>
+
+    <section class="demo-container">
+        <h2>Demo</h2>
+
+        <p class="blurb">
+            Use the tabs to switch back and forth between what a user sees when they visit a Shopify Store and what the store owner sees when they login.
+        </p>
+
+        <!--SECTION WHERE THE REACT APP IS INSERTED-->
+        <div id="root"></div>
+
+        <p class="footnote">* any data entered into the forms in this demo are not sent anywhere and only last until you refresh the browser or leave the page :)</p>
+
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="#cdcdcd" points="0,70 100,100 0,100"/>
+        </svg>
+
+    </section>
+
+    <footer>
+        <p><a href="http://lukeoleson.ca">www.lukeoleson.ca</a>, &copy;</p>
+    </footer>
+
+    <!-- my react -->
+    <script type="text/jsx" src="../assets/mine/jsx/create-event-form.component.jsx"></script>
+    <script type="text/jsx" src="../assets/mine/jsx/calendar.component.jsx"></script>
+    <script type="text/jsx" src="../assets/mine/jsx/admin-row.component.jsx"></script>
+    <script type="text/jsx" src="../assets/mine/jsx/user-row.component.jsx"></script>
+    <script type="text/jsx" src="../assets/mine/jsx/settings-panel.component.jsx"></script>
+    <script type="text/jsx" src="../assets/mine/jsx/main.demo.component.jsx"></script>
+
+</body>
+</html>
